@@ -9,10 +9,10 @@ module LinkedIn
         post(path, defaults.merge(share).to_json, "Content-Type" => "application/json")
       end
 
-      
+
       def follow_company(company_id)
-        path = "/people/~/following/companies/id=#{company_id}"
-        post(path, "Content-Type" => "application/json")
+        path = "/people/~/following/companies"
+        post(path, {id: company_id}.to_json ,"Content-Type" => "application/json")
       end
 
 
