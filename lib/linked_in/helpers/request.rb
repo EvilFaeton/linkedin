@@ -4,7 +4,8 @@ module LinkedIn
 		module Request
 
 			DEFAULT_HEADERS = {
-				'x-li-format' => 'json'
+				'x-li-format' => 'json',
+				'Accept-Language' => 'en-US, es-ES'
 			}
 
 			API_PATH = '/v1'
